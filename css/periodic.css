@@ -12,6 +12,7 @@ a {
 
 #header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font: 800 80px Serif;
@@ -32,13 +33,12 @@ td div {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 150px;
-    height: 150px;
     word-wrap: break-word;
     font-size: 21px;
     text-align: center;
     border: 1px solid black;
-    background-color: white;
+    width: 150px;
+    height: 150px;
 }
 
 #legend-container {
@@ -49,6 +49,7 @@ td div {
 
 #legend-table {
     width: 100%;
+    margin: 10px;
 }
 
 .rank {
