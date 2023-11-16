@@ -55,7 +55,6 @@ function randomInt(max = 1, min = 0) {
     document.querySelectorAll(".box").forEach((el) => {
       const hex = randomColor();
       const textColor = setContrastColor(hex);
-  
       el.setAttribute("style", `background-color:${hex}; color:${textColor}`);
   
       // Update the link elements inside the current box element
@@ -70,4 +69,6 @@ function randomInt(max = 1, min = 0) {
   randomizer.addEventListener("click", updateColors);
   // initialize colors
   randomizer.dispatchEvent(new Event("click"));
+
+  
   
